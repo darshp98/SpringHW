@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+	<!-- what will show in the tab -->
+	<title>Darshana's NYC Food Adventures</title>
+<!-- link to css sheet -->
+	<link rel="stylesheet" href="barprimi.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar">
+		<li><a href="homepage2.html">Home</a></li>
+		<li><a href="#" class="active">Blog Posts</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+	</div>
+
+
+
+<!-- header, pic slideshow, social media links -->
+
+	<div class="slideshow">
+		<div class="slide fade">
+			<img src="nyc2.jpg" style="width:100%">
+		</div>
+
+
+		<div class="slide fade">
+			<img src="slide2.jpg" style="width:100%">
+		</div>
+
+		<div class="slide fade">
+			<img src="slide3.jpg" style="width:100%">
+		</div>
+
+		
+		<div class="slide fade">
+			<img src="slide4.jpg" style="width:100%">
+		</div>
+
+		<h1 style="font-size:60px;">Darshana's NYC Food Adventures</h1>
+	</div>
+
+
+<!-- javascript function to show slides -->
+
+	<script>
+		var slideindex = 0;
+		slideshow();
+
+		function slideshow() {
+		    var i;
+		    var slides = document.getElementsByClassName("slide");
+		   
+		    for (i = 0; i < slides.length; i++) {
+
+		       slides[i].style.display = "none";  
+
+		    }
+
+		    slideindex++;
+
+			if (slideindex > slides.length) {
+
+			slideindex = 1
+			}    
+
+		    slides[slideindex-1].style.display = "block";  
+
+// to change slides every 2 sec
+
+		    setTimeout(slideshow, 2000); 
+		}
+
+
+	</script>
+
+	<div class="barprimi">
+
+	<img src="phebes2.jpg">
+
+
+</div>
+
+
+<div class="post">
+	<p style="font-size:30px;">April 5th: Phebes</p>
+
+<p>Whether you want to have a chill Sunday brunch, or you want to watch the football game, your go-to should be Phebe's.</p>
+	<p>This place has it all, and for cheap prices (compared to most other brunch places in NYC). This place is only two blocks away from me, so I go very often when I want to eat something that isn't from an NYU dining hall. Make sure to go for not only the food, but also for the bar nights they have!</s></p>
+	
+
+	</div>
+	
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- what will show in the tab -->
+	<title>Darshana's NYC Food Adventures</title>
+<!-- link to css sheet -->
+	<link rel="stylesheet" href="aboutme.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar">
+		<li><a href="homepage2.html">Home</a></li>
+		<li><a href="blogposts.html">Blog Posts</a></li>
+		<li><a href="#" class="active">About Me</a></li>
+	</div>
+
+
+
+<!-- header, pic slideshow, social media links -->
+
+	<div class="slideshow">
+		<div class="slide fade">
+			<img src="nyc2.jpg" style="width:100%">
+		</div>
+
+
+		<div class="slide fade">
+			<img src="slide2.jpg" style="width:100%">
+		</div>
+
+		<div class="slide fade">
+			<img src="slide3.jpg" style="width:100%">
+		</div>
+
+		
+		<div class="slide fade">
+			<img src="slide4.jpg" style="width:100%">
+		</div>
+
+		<h1 style="font-size:60px;">Darshana's NYC Food Adventures</h1>
+	</div>
+
+
+<!-- javascript function to show slides -->
+
+	<script>
+		var slideindex = 0;
+		slideshow();
+
+		function slideshow() {
+		    var i;
+		    var slides = document.getElementsByClassName("slide");
+		   
+		    for (i = 0; i < slides.length; i++) {
+
+		       slides[i].style.display = "none";  
+
+		    }
+
+		    slideindex++;
+
+			if (slideindex > slides.length) {
+
+			slideindex = 1
+			}    
+
+		    slides[slideindex-1].style.display = "block";  
+
+// to change slides every 2 sec
+
+		    setTimeout(slideshow, 2000); 
+		}
+
+
+	</script>
+
+<div class="me">
+
+	<img src="me.jpg">
+
+
+</div>
+
+
+<div class="bio">
+	<p style="font-size:30px;">Get to Know Me!</p>
+
+<p>Hi there! My name's Darshana Paramesh and I love to explore the city of New York, mostly by eating my way through it.</p>
+	<p>I've always enjoyed eating all different types of cuisines, and what better place to explore this love of mine than in the greatest city in the world. This website is a collection of all of the food adventures I go on in New York.</p>
+		<p>Hopefully, some of you find this helpful to go venture to new places that you've never been to before!</p>
+
+	</div>
+	
+<h2>Contact Me!</h2>
+
+<a href="https://www.facebook.com/darshana.paramesh" class="fa fa-facebook"></a>
+<a href="https://www.linkedin.com/in/darshana-paramesh-072936151/" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/darshhvader/" class="fa fa-instagram"></a>
+
+
+
+
+
+
+
+

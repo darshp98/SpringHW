@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+	<!-- what will show in the tab -->
+	<title>Darshana's NYC Food Adventures</title>
+<!-- link to css sheet -->
+	<link rel="stylesheet" href="barprimi.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar">
+		<li><a href="homepage2.html">Home</a></li>
+		<li><a href="#" class="active">Blog Posts</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+	</div>
+
+
+
+<!-- header, pic slideshow, social media links -->
+
+	<div class="slideshow">
+		<div class="slide fade">
+			<img src="nyc2.jpg" style="width:100%">
+		</div>
+
+
+		<div class="slide fade">
+			<img src="slide2.jpg" style="width:100%">
+		</div>
+
+		<div class="slide fade">
+			<img src="slide3.jpg" style="width:100%">
+		</div>
+
+		
+		<div class="slide fade">
+			<img src="slide4.jpg" style="width:100%">
+		</div>
+
+		<h1 style="font-size:60px;">Darshana's NYC Food Adventures</h1>
+	</div>
+
+
+<!-- javascript function to show slides -->
+
+	<script>
+		var slideindex = 0;
+		slideshow();
+
+		function slideshow() {
+		    var i;
+		    var slides = document.getElementsByClassName("slide");
+		   
+		    for (i = 0; i < slides.length; i++) {
+
+		       slides[i].style.display = "none";  
+
+		    }
+
+		    slideindex++;
+
+			if (slideindex > slides.length) {
+
+			slideindex = 1
+			}    
+
+		    slides[slideindex-1].style.display = "block";  
+
+// to change slides every 2 sec
+
+		    setTimeout(slideshow, 2000); 
+		}
+
+
+	</script>
+
+<div class="barprimi">
+
+	<img src="vandal.jpg">
+
+
+</div>
+
+
+<div class="post">
+	<p style="font-size:30px;">March 17th: Vandal</p>
+
+<p>If you take two steps outside the 2nd St NYU Residence Hall, you'll find this restaurant 2 feet away from you.</p>
+	<p>I think out of all things I've eaten in the city, this place had the craziest one to offer: squid ink pasta. I know this sounds alarming, and trust me, it looked alarming. However, it was one of the tastiest meals I've ever had and gave me a unique experience.</s></p>
+		<p>Try it out and see what fun preparation they have in store for you!</p>
+
+	</div>
+	

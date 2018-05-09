@@ -1,0 +1,169 @@
+html, body {
+	margin:0;
+}
+
+html {
+background-color:#DCDCDC;
+}
+
+body {
+	font-family: 'Abhaya Libre';
+}
+
+.navbar {
+	overflow: hidden;
+    background-color: #DCDCDC;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    color:black;
+    z-index:10;
+}
+
+.navbar li {
+	display: inline;
+}
+
+.navbar a {
+
+    display: inline-block;
+    color: #a9a9a9;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #708090;
+    color: black;
+}
+
+.active {
+	background-color:#FFE4E1;
+}
+
+/*end of navigation bar*/
+
+/*header div section w/ pic slideshow, social media handles, and title */
+
+/*SLIDESHOW HEADER*/
+
+  .slideshow {
+    width:100%;
+    max-width:2000px;
+    position: relative;
+    margin: 0;
+
+
+  }
+
+
+
+  img {
+    height:600px;
+  margin-left:auto;
+  margin-right:auto;
+  	vertical-align:middle;
+
+  }
+
+
+  /*fade of the slides*/
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+  h1 {
+  position:absolute;
+  top:40%;
+  left:10%;
+  right:10%;
+  bottom:30%;
+  text-align:center;
+  /*modify to center*/
+
+  }
+/*end of slideshow header*/
+
+
+.me {
+	padding:50px;
+	float:left;
+
+}
+
+.me img {
+	width:auto;
+	height:500px;
+float:left;
+
+	border-style:dotted;
+	border-width:5px;
+
+
+}
+
+.bio h1 {
+	font-style:italic;
+}
+
+
+.bio {
+text-align:left;
+
+}
+
+.bio h1 {
+	text-align:center;
+
+
+
+}
+
+.bio p {
+	text-indent:20px;
+	padding-right:20px;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+
+

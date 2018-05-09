@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+	<!-- what will show in the tab -->
+	<title>Darshana's NYC Food Adventures</title>
+<!-- link to css sheet -->
+	<link rel="stylesheet" href="barprimi.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar">
+		<li><a href="homepage2.html">Home</a></li>
+		<li><a href="#" class="active">Blog Posts</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+	</div>
+
+
+
+<!-- header, pic slideshow, social media links -->
+
+	<div class="slideshow">
+		<div class="slide fade">
+			<img src="nyc2.jpg" style="width:100%">
+		</div>
+
+
+		<div class="slide fade">
+			<img src="slide2.jpg" style="width:100%">
+		</div>
+
+		<div class="slide fade">
+			<img src="slide3.jpg" style="width:100%">
+		</div>
+
+		
+		<div class="slide fade">
+			<img src="slide4.jpg" style="width:100%">
+		</div>
+
+		<h1 style="font-size:60px;">Darshana's NYC Food Adventures</h1>
+	</div>
+
+
+<!-- javascript function to show slides -->
+
+	<script>
+		var slideindex = 0;
+		slideshow();
+
+		function slideshow() {
+		    var i;
+		    var slides = document.getElementsByClassName("slide");
+		   
+		    for (i = 0; i < slides.length; i++) {
+
+		       slides[i].style.display = "none";  
+
+		    }
+
+		    slideindex++;
+
+			if (slideindex > slides.length) {
+
+			slideindex = 1
+			}    
+
+		    slides[slideindex-1].style.display = "block";  
+
+// to change slides every 2 sec
+
+		    setTimeout(slideshow, 2000); 
+		}
+
+
+	</script>
+
+	<div class="barprimi">
+
+	<img src="bychloe.jpg">
+
+
+</div>
+
+
+<div class="post">
+	<p style="font-size:30px;">March 13th: By Chloe</p>
+
+<p>Whether you're vegan, vegetarian, or a meat eater, you would love to dine at this place!</p>
+	<p>Being a vegetarian, it's hard for me to find places that I can eat at where they not only guarantee you that you're meal is 100% vegetarian, but also a meal that you will enjoy. By Chloe's is the perfect place for vegans an vegetarians to get a great-tasting meal. It'll taste so good that you won't even know it's vegan!</s></p>
+		<p>Try it out and see what your favorite dish turns out to be!</p>
+
+	</div>
+	
+

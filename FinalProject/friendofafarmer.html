@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+	<!-- what will show in the tab -->
+	<title>Darshana's NYC Food Adventures</title>
+<!-- link to css sheet -->
+	<link rel="stylesheet" href="barprimi.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar">
+		<li><a href="homepage2.html">Home</a></li>
+		<li><a href="#" class="active">Blog Posts</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+	</div>
+
+
+
+<!-- header, pic slideshow, social media links -->
+
+	<div class="slideshow">
+		<div class="slide fade">
+			<img src="nyc2.jpg" style="width:100%">
+		</div>
+
+
+		<div class="slide fade">
+			<img src="slide2.jpg" style="width:100%">
+		</div>
+
+		<div class="slide fade">
+			<img src="slide3.jpg" style="width:100%">
+		</div>
+
+		
+		<div class="slide fade">
+			<img src="slide4.jpg" style="width:100%">
+		</div>
+
+		<h1 style="font-size:60px;">Darshana's NYC Food Adventures</h1>
+	</div>
+
+
+<!-- javascript function to show slides -->
+
+	<script>
+		var slideindex = 0;
+		slideshow();
+
+		function slideshow() {
+		    var i;
+		    var slides = document.getElementsByClassName("slide");
+		   
+		    for (i = 0; i < slides.length; i++) {
+
+		       slides[i].style.display = "none";  
+
+		    }
+
+		    slideindex++;
+
+			if (slideindex > slides.length) {
+
+			slideindex = 1
+			}    
+
+		    slides[slideindex-1].style.display = "block";  
+
+// to change slides every 2 sec
+
+		    setTimeout(slideshow, 2000); 
+		}
+
+
+	</script>
+
+
+	<div class="barprimi">
+
+	<img src="friendofafarmer.jpg">
+
+
+</div>
+
+
+<div class="post">
+	<p style="font-size:30px;">April 20th: Friend of a Farmer</p>
+
+<p>If you want to feel at home the next time you dine, make sure to check out this homely restaurant.</p>
+	<p>When living in Brooklyn Heights freshman year, there were many restaurant options on Montague St. However, one that definitely catches your eye is Friend of A Farmer with it's sheek, homely, outdoorsy setup. Inside, you'll find a fireplace in a living room-designed area with an upstairs balcony for dining. It's a great place to go to when they sun's out and you're ready to eat.</s></p>
+	
+
+	</div>
+	
+
